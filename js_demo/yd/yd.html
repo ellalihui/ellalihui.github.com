@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+* { margin:0; padding:0; }
+input { position:absolute; top:30px; left:100px; width:200px; height:60px; }
+div { position:relative; width:700px; height:400px; margin:100px auto; }
+span { position:absolute; opacity:0; background:url(images/2.jpg) no-repeat;}
+</style>
+</head>
+<script src="../move.js"></script>
+<script>
+window.onload=function(){
+	var  oDiv=document.getElementById('div1');
+	var  oImg=document.getElementById('img1');
+	var  Row=4;   //行
+	var  Col=7;     //列
+	var  W=700;
+	var  H=400;
+	var  width=W/Col;
+	var  height=H/Row;
+	var  aSpan=[];
+	var aPath=['images/1.jpg', 'images/2.jpg', 'images/3.jpg'];
+	var  now=0;  //当前点击的次数
+	var  bFlog=false;
+	for(var r=0;r<Row;r++)
+	{
+		for(var  c=0;c<Col;c++)
+		{
+			var  oSpan=document.createElement('span');	
+			oSpan.style.width=width+'px';
+			oSpan.style.height=height+'px';
+			var top=height*r;
+			var  left=width*c;
+			oSpan.style.left=left+'px';
+			oSpan.style.top=top+'px';
+			oSpan.style.backgroundPosition=-left+'px   -'+top+'px'; 
+			oDiv.appendChild(oSpan);
+			aSpan.push(oSpan);
+		}	
+	}
+	var  oBtn=document.getElementById('btn');
+	oBtn.onclick=function(){
+		if(bFlog)
+		{
+			return  false;
+		}
+		now++;
+		bFlog=true;
+		for(var i=0;i<aSpan.length;i++)
+		{
+			 aSpan[i].style.opacity=0;
+			 aSpan[i].style.backgroundImage='url('+aPath[now%aPath.length]+')';		
+		}
+		var n=0;
+		var  timer=setInterval(function  (){
+			(function(index){
+				move(aSpan[n],{opacity:1},{
+					complete:function(){
+						if(index==aSpan.length-1)
+						{
+							oImg.src=aPath[now%aPath.length];
+							
+							bFlog=false;  //作用是让按钮再可以点击
+						}
+					}
+			});
+			})(n);
+			
+			n++;
+			if(n==aSpan.length)
+			{
+				clearInterval(timer);
+			}
+		},100)
+	};
+};
+</script>
+<body>
+<input type="button" value="go"  id="btn"/>
+<div id="div1">
+	<img src="images/1.jpg"  id="img1"/>
+</div>
+</body>
+</html>

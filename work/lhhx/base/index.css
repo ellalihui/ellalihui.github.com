@@ -80,7 +80,7 @@
 .medium  { width:27px; height:48px; border:1px solid #3e4661; background:#272c3e; position:absolute;text-align:center; line-height:15px; border-radius:12px; top:83px; left:10px; padding-top:15px;}
 .medium   i{ background:url(../img/dian1.png); width:8px; height:8px; float:left; margin-left:10px; margin-top:5px;}
 .medium  a{ color:#0cb6c6; font-size:14px; float:left;}
-.column_right{ background:#322e3f; height:303px;;border-bottom:1px solid #443b4f;;border-right:1px solid #443b4f;}
+.column_right{ background:#322e3f; height:303px;;border-bottom:1px solid #443b4f;;border-right:1px solid #443b4f; overflow:hidden;}
 .column_right  .column_t{ background:url(../img/sprite.jpg)  0  -260px; width:381px; height:58px;overflow:hidden;}
 .column_right  .column_t  li{ float:left; color:#fdf4e0; width:95px; font-size:14px; font-weight:bold; height:58px; line-height:58px; text-align:center;}
 
@@ -130,8 +130,7 @@
 .showbox  i{ background:url(../img/smile.png) no-repeat  left  center; width:15px; height:15px; float:left; }
 .showbox  img{ border:1px solid #433b4f;}
 .opa{ opacity:0.4; filter:alpha(opacity:40); width:100%; height:36px; background:#000; position:absolute; bottom:0; left:0;}
-.cont_list{ width:100%; height:36px; font-size:14px; position:absolute; bottom:0; left:0; line-height:36px; overflow:hidden;}
-.cont_list  a{ color:#fff; float:left; padding-left:6px;}
+.cont_list{ width:100%; height:36px; font-size:14px; position:absolute; bottom:0; left:0; line-height:36px; overflow:hidden;color:#fff;padding-left:6px;}
 .cont_list  span{ color:#a997c3; float:right; padding-right:6px;background:url(../img/smile.png) left  center no-repeat;padding-left:20px;}
 .active4   h4{ display:none;}
 .active4  .showbox{ display:block;}

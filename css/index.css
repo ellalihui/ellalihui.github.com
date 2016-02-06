@@ -59,7 +59,7 @@ nav{
 nav li{
     float: left;
     margin: 0px 20px;
-    font-size: 16px;
+    font-size: 14px;
 }
 nav li a{
     position: relative;
@@ -205,6 +205,7 @@ h2{
 .home_info1 {
     font-size: 20px;
     font-weight: bold;
+	font-family:'Helvetica Neue';
 }
 .home_info1, .home_info2, .home_info3, .home_info4, .home_info5 {
     margin: 25px auto;
@@ -767,7 +768,6 @@ dd a:hover {
     width:100%;
 }
 .footer{
-    font-size:12px;
     height:70px;
     width:100%;
     min-width:1100px;
@@ -777,14 +777,14 @@ dd a:hover {
 }
 .footer_content{
     line-height: 24px;
-    font-size: 8px;
+    font-size: 12px;
     text-align: center;
     color: #292929;
 }
 .footer_content a {
     display: inline-block;
     margin: 0 5px;
-    font-size: 8px;
+    font-size: 12px;
     color: #292929;
 }
 .footer_content a:hover {

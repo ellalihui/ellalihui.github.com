@@ -503,9 +503,10 @@ dd a:hover {
     margin-bottom: 10px;
 }
 .js_list_link {
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 10px;
     color: #f00;
+    text-shadow: 5px 5px 5px #f00;
 }
 .js_list dd {
     position: relative;

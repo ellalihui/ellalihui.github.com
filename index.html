@@ -1,874 +1,429 @@
-<!doctype html>
-
-
-
-  
-
-
-<html class="theme-next pisces use-motion">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-  
-  
-  
-  
-
-  
-
-  
-    
-
-    
-  
-
-  
-
-  
-    
-
-    
-  
-
-  
-    
-
-    
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italicLato:300,300italic,400,400italic,700,700italicPT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
-
-
-
-<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="ellalihui" />
-
-
-
-
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
-
-
-
-
-
-
-<meta name="description" content="Love Coding,Enjoy Life">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Lihui's Blog">
-<meta property="og:url" content="http://ellalihui.github.io/index.html">
-<meta property="og:site_name" content="Lihui's Blog">
-<meta property="og:description" content="Love Coding,Enjoy Life">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Lihui's Blog">
-<meta name="twitter:description" content="Love Coding,Enjoy Life">
-
-
-
-<script type="text/javascript" id="hexo.configuration">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    scheme: 'Pisces',
-    sidebar: {"position":"left","display":"post"},
-    fancybox: true,
-    motion: true,
-    duoshuo: {
-      userId: 0,
-      author: '博主'
-    }
-  };
-</script>
-
-  <title> Lihui's Blog </title>
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content='IE-edge,chrome=1'>
+    <title>李慧的个人站</title>
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/index.js"></script>
 </head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
-  
-
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
-  
-
-  <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Lihui's Blog</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-  </div>
-  <p class="site-subtitle">Love Coding,Enjoy Life</p>
-</div>
-
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
-</div>
-
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-
-      
-        <li class="menu-item menu-item-search">
-          
-            <a href="#" class="popup-trigger">
-          
-            
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
-            
-            搜索
-          </a>
-        </li>
-      
-    </ul>
-  
-
-  
-    <div class="site-search">
-      
-  <div class="popup">
- <span class="search-icon fa fa-search"></span>
- <input type="text" id="local-search-input">
- <div id="local-search-result"></div>
- <span class="popup-btn-close">close</span>
-</div>
-
-
-    </div>
-  
-</nav>
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/01/05/这是第一次发表文章/" itemprop="url">
-                  这是第一次发表文章
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-01-05T10:11:20+08:00" content="2017-01-05">
-              2017-01-05
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/前端/" itemprop="url" rel="index">
-                    <span itemprop="name">前端</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
+<body>
+<!--header  begin-->
+<div id="header" style="opacity: 0.3;"></div>
+<header style="opacity: 1;" class="clearfix">
+    <div class="logo">
+        <img src="images/img.png" alt="">
+        <div class="header_p">
+            <p class="header_p1">F2E</p>
+            <p class="header_p2">个人简历</p>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>　　Scrapy是一个为了爬取网站数据，提取结构性数据而编写的应用框架。它使用 Twisted这个异步网络库来处理网络通讯，架构清晰，并且包含了各种中间件接口，可以灵活的完成各种需求。学习Python爬虫有一段时间了，但是也是最近才接触到如此强大的Scrapy，它比BeautifulSoup更加完善，BeautifulSoup可以说是轮子，而Scrapy则是车子，不需要你关注太多的细节。<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2017/01/05/这是第一次发表文章/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
     </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/12/29/hello/" itemprop="url">
-                  hello
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-29T14:12:01+08:00" content="2016-12-29">
-              2016-12-29
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Diary/" itemprop="url" rel="index">
-                    <span itemprop="name">Diary</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
-
-
-          </div>
-          
-
-
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/avatar.gif"
-               alt="ellalihui" />
-          <p class="site-author-name" itemprop="name">ellalihui</p>
-          <p class="site-description motion-element" itemprop="description">Love Coding,Enjoy Life</p>
-        </div>
-        <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/archives">
-              <span class="site-state-item-count">2</span>
-              <span class="site-state-item-name">日志</span>
-            </a>
-          </div>
-
-          
-            <div class="site-state-item site-state-categories">
-              <a href="/categories">
-                <span class="site-state-item-count">2</span>
-                <span class="site-state-item-name">分类</span>
-              </a>
+    <nav>
+        <ul>
+            <li><a href="javascript:;">首页</a></li>
+            <li><a href="work/blog/index.html">随笔</a></li>
+            <li><a href="work/blog/index.html">沉淀</a></li>
+            <li><a href="work/blog/index.html">关于</a></li>
+        </ul>
+    </nav>
+</header>
+<!--header end-->
+<!-- home page begin -->
+<div id="section_wrap">
+    <!--第一屏 首页-->
+    <div class="section" style="background:#f9afae;">
+        <div class="home_content" style="padding-top:74px">
+            <div class="home_head" style="margin-top: 100px;">
+                <img src="images/photo.jpg" id="home_photo1" alt="" class="scale">
             </div>
-          
-
-          
-            <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">2</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
+            <div id="home_info">
+                <p class="home_info1" style="display: block;">雄关漫道真如铁，而今迈步从头越.</p>
+                <div class="home_info_box" style="width: 800px;">
+                    <p class="home_info2 right" style="display: block;">我叫李慧</p>
+                    <p class="home_info3 left" style="display: block;">24岁</p>
+                    <p class="home_info4 right" style="display: block;">想成为一名前端开发工程师</p>
+                    <p class="home_info5 left" style="display: block;">tel：18201432470</p>
+                </div>
             </div>
-          
-
-        </nav>
-
-        
-
-        <div class="links-of-author motion-element">
-          
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/ellalihui" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-github"></i>
-                  
-                  GitHub
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/your-user-name" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-twitter"></i>
-                  
-                  Twitter
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://weibo.com/甜甜哋小黑" target="_blank" title="微博">
-                  
-                    <i class="fa fa-fw fa-weibo"></i>
-                  
-                  微博
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://www.zhihu.com/people/ellalihui" target="_blank" title="知乎">
-                  
-                    <i class="fa fa-fw fa-globe"></i>
-                  
-                  知乎
-                </a>
-              </span>
-            
-          
         </div>
-
-        
-        
-
-        
-        
-
-      </section>
-
-      
-
     </div>
-  </aside>
+    <!--第一屏 end-->
 
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy; 
-  <span itemprop="copyrightYear">2017</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">ellalihui</span>
-</div>
-
-<div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
-</div>
-
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Pisces
-  </a>
-</div>
-<div class="busuanzi-count">
-  <script async="" src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <span class="site-uv"><i class="fa fa-user"></i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
-    <span class="site-pv"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span>
-</div>
-
-        
-
-        
-      </div>
-    </footer>
-
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
+    <!--第二屏 专业技能-->
+    <div class="section" style="background:#ffe357;">
+        <div class="skill_content" style="padding-top:85px;">
+            <div class="title">
+                <h1>专业技能</h1>
+                <div class="title_en reverse">
+                    <h2>· Skill ·</h2>
+                </div>
+            </div>
+            <div id="skill_info"><p>IT行业的学习需要持之以恒，知识深度与广度都很重要。HTML、CSS和JavaScript是前端技术中最核心的三个元素，而前端开发的重中之重就是对原生javascript的理解。另外还在不断学习新的知识，如angular，html5，php等等。学的不仅是技术，更是梦想！ </p></div>
+            <div class="skill_list">
+                <div class="skill_list_content skill_scale" id="skill_list1">
+                    <b></b>
+                    <div class="skill_icon" id="skill_icon1">
+                        <img src="images/html.png" alt="">
+                    </div>
+                    <div class="skill_name" id="skill_name1">HTML</div>
+                    <div class="skill_flag"></div>
+                    <div class="skill_int" id="skill_int1">
+                        <ul>
+                            <li>熟练掌握HTML</li>
+                            <li>熟练运用html标签</li>
+                            <li>能编写符合W3C标准的代码</li>
+                            <li>了解前端性能优化</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill_list_content skill_scale" id="skill_list2">
+                    <b></b>
+                    <div class="skill_icon" id="skill_icon2">
+                        <img src="images/css.png" alt="">
+                    </div>
+                    <div class="skill_name" id="skill_name2">CSS</div>
+                    <div class="skill_flag"></div>
+                    <div class="skill_int" id="skill_int2">
+                        <ul>
+                            <li>熟练掌握CSS</li>
+                            <li>易维护的HTML+CSS;还原视觉设计</li>
+                            <li>注重浏览器兼容性，了解常见的css hack</li>
+                            <li>了解模块化开发</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill_list_content skill_scale" id="skill_list3">
+                    <b></b>
+                    <div class="skill_icon" id="skill_icon3">
+                        <img src="images/js.png" alt="">
+                    </div>
+                    <div class="skill_name" id="skill_name3">JavaScript</div>
+                    <div class="skill_flag"></div>
+                    <div class="skill_int" id="skill_int3">
+                        <ul>
+                            <li>熟练掌握及使用原生JS</li>
+                            <li>掌握ajax的运作原理</li>
+                            <li>注重JavaScript性能优化</li>
+                            <li>会用jQuery库，了解js闭包等</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill_list_content skill_scale" id="skill_list4">
+                    <b></b>
+                    <div class="skill_icon" id="skill_icon4"><img src="images/Hfive.png" alt=""></div>
+                    <div class="skill_name" id="skill_name4">H5&&CSS3</div>
+                    <div class="skill_flag"></div>
+                    <div class="skill_int" id="skill_int4">
+                        <ul>
+                            <li>熟练掌握html5</li>
+                            <li>熟练运用css3新属性,了解响应式设计</li>
+                            <li>熟悉SVN，Git版本控制工具</li>
+                            <li>了解响应式设计</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+    <!--第二屏 end-->
 
-  
+    <!--第三屏 我的特效-->
+    <div class="section" style="background:#79dcad;">
+        <div class="js_content" style="padding-top:85px;">
+            <div class="title">
+                <h1>我的特效</h1>
+                <div class="title_en reverse">
+                    <h2>· EFFECT ·</h2>
+                </div>
+            </div>
+        </div>
+        <div class="js_list_slider b_to_t">
+            <div class="js_scale" id="js_list">
+                <div class="js_list_content clearfix" style="width: 2700px;">
+                    <div class="js_list bg1">
+                        <div class="js_list_left">
+                            <dl>
+                                <dt>3D爆炸效果</dt>
+                                <dd>点击图片，产生3D爆炸的效果</dd>
+                                <dd>此效果主要运用了CSS3中的transform，translate3d和rotate</dd>
+                                <dd>当运动结束的时候改变transform，translate3d和rotate为0</dd>
+                                <dd>此效果只支持高级浏览器</dd>
+                                <p class="js_list_link">点击右面的图片，进入3D爆炸效果</p>
+                            </dl>
+                            <a href="work/effect/bz/index.html" class="link" target="_blank"></a>
+                        </div>
+                    </div>
+                    <div class="js_list bg2">
+                        <div class="js_list_left">
+                            <dl>
+                                <dt>3D切换效果</dt>
+                                <dd>单击按钮“左”和“右”切换图片</dd>
+                                <dd>此效果主要运用了CSS3中的倒影，景深，translate和rotate</dd>
+                                <dd>此外还用到了一些数组的操作方法</dd>
+                                <dd>此效果只支持高级浏览器，其中倒影效果支持Chrome</dd>
+                                <p class="js_list_link">点击右面的图片，进入3D切换效果</p>
+                            </dl>
+                            <a href="work/effect/qh/index.html" class="link" target="_blank"></a>
+                        </div>
+                    </div>
+                    <div class="js_list bg3">
+                        <div class="js_list_left">
+                            <dl>
+                                <dt>照片墙</dt>
+                                <dd>当点击鼠标移动其中一个图片与其他图片碰撞</dd>
+                                <dd>此效果主要运用的是<a href="#" class="md-trigger">拖拽</a></dd>
+                                <dd>此外还封装了三个函数，找最近的函数，找两个物体之间的距离和碰撞检测</dd>
+                                <p class="js_list_link">点击右面的图片，进入照片墙效果</p>
+                            </dl>
+                            <a href="work/effect/zpq/index.html" class="link" target="_blank"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="js_list_to">
+                    <div class="js_list_toleft" id="prev">
+                        <img src="images/left.png">
+                    </div>
+                    <div class="js_list_toright" id="next">
+                        <img src="images/right.png">
+                    </div>
+                </div>
+            </div>
+            <div id="js_timeline" class="js_scale">
+                <div>
+                    <a href="#" title="爆炸效果"></a>
+                    <a href="#" title="3D切换"></a>
+                    <a href="#" title="照片墙"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--第三屏 end-->
 
+    <!--第四屏 我的移动端-->
+    <div class="section" style="background:#fcaf4a;">
+        <div class="mobile_content" style="padding-top:85px;">
+            <div class="title">
+                <h1>我的移动端</h1>
+                <div class="title_en reverse">
+                    <h2>· MOBILE ·</h2>
+                </div>
+            </div>
+        </div>
+        <div id="mobile_content_list">
+            <ul class="mobile_box">
+                <li class="mobile_scale  bounceInDown">
+                    <div class="mobile_box_content">
+                        <span class="mobile_box_hover">
+                            <p class="mobile_box_title">果&nbsp;壳</p>
+                            <span class="mobile_box_hover_icon">
+                                <a href="work/mobile/guoke/index.html"  target="_blank" class="mobile_box_link">
+                                    <img src="images/css_link.png" alt="">
+                                </a>
+                            </span>
+                        </span>
+                        <img src="images/box1.jpg" alt="" class="mobile_box_bg">
+                    </div>
+                </li>
+                <li class="mobile_scale  bounceInDown">
+                    <div class="mobile_box_content">
+                         <span class="mobile_box_hover">
+                             <p class="mobile_box_title">聚划算</p>
+                             <span class="mobile_box_hover_icon">
+                                 <a href="work/mobile/juhuasuan/index.html" target="_blank" class="mobile_box_link">
+                                    <img src="images/css_link.png" alt="">
+                                 </a>
+                             </span>
+                         </span>
+                        <img src="images/box2.jpg" alt=""class="mobile_box_bg">
+                    </div>
+                </li>
+                <li class="mobile_scale  bounceInDown">
+                    <div class="mobile_box_content">
+                          <span class="mobile_box_hover">
+                              <p class="mobile_box_title">京&nbsp;东</p>
+                              <span class="mobile_box_hover_icon">
+                                  <a href="work/mobile/jd/index.html" target="_blank" class="mobile_box_link">
+                                      <img src="images/css_link.png" alt="">
+                                  </a>
+                              </span>
+                          </span>
+                        <img src="images/box3.jpg" alt="" class="mobile_box_bg">
+                    </div>
+                </li>
+                <li class="mobile_scale  bounceInDown">
+                    <div class="mobile_box_content">
+                        <span class="mobile_box_hover">
+                            <p class="mobile_box_title">携&nbsp;程</p>
+                            <span class="mobile_box_hover_icon">
+                                <a  href="work/mobile/xiecheng/index.html" target="_blank" class="mobile_box_link">
+                                    <img src="images/css_link.png" alt="">
+                                </a>
+                            </span>
+                        </span>
+                        <img src="images/box4.jpg" alt="" class="mobile_box_bg">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile_info">
+            <p>这是我的移动端作品。</p>
+            <p>更多demo请移步
+                <a  href="work/here/demo-index.html" target="_blank">这里</a>。
+            </p>
+        </div>
+    </div>
+    <!--第四屏 E-->
+
+    <!--第五屏 我的作品-->
+    <div class="section" style="background:#909ef5;">
+        <div class="demo_content" style="padding-top:85px;">
+            <div class="title">
+                <h1>我的作品</h1>
+                <div class="title_en reverse">
+                    <h2>· DEMO ·</h2>
+                </div>
+            </div>
+        </div>
+        <div class="demo_list" id="demo_list">
+            <ul class="clearfix" id="demo_content">
+                <li class="demo_tab_li ileft">
+                    <img src="images/g1.jpg"/>
+                    <a href="work/demo/lhhx/index.html" target="_blank">
+                        <span class="lg">灵魂回响</span>
+                    </a>
+                </li>
+                <li class="demo_tab_li up">
+                    <img src="images/g2.jpg"/>
+                    <a href="work/demo/aiqiyi/index.html" target="_blank">
+                        <span class="lg">爱奇艺</span>
+                    </a>
+                </li>
+                <li class="demo_tab_li iright">
+                    <img  src="images/g3.jpg"/>
+                    <a href="work/demo/mt/mt/index.html" target="_blank">
+                        <span class="lg">美团</span>
+                    </a>
+                </li>
+                <li class="demo_tab_li ileft">
+                    <img src="images/g4.jpg"/>
+                    <a href="work/demo/sheying/index.html" target="_blank">
+                        <span class="lg">婚纱摄影</span>
+                    </a>
+                </li>
+                <li class="demo_tab_li up">
+                    <img src="images/g5.jpg"/>
+                    <a href="work/demo/yinyuetai/index.html" target="_blank">
+                        <span class="lg">音悦台</span>
+                    </a>
+                </li>
+                <li class="demo_tab_li iright">
+                    <img  src="images/g6.jpg"/>
+                    <a href="work/demo/youku/index.html" target="_blank">
+                        <span  class="lg">优酷</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--第五屏 end-->
+
+    <!--底部 B-->
+    <div class="section" id="section-footer">
+        <div id="footer-text">
+            <div class="footer">
+                <div class="footer_content">
+                    <a href="#">QQ</a>|
+                    <a href="http://weibo.com/u/2712764111/home?wvr=5&lf=reg" target="_blank">微博</a>|
+                    <a href="#">知乎</a>|
+                    <a href="#">人人</a>|
+                    <a href="https://github.com/ellalihui/ellalihui.github.com" target="_blank">Github</a>
+                </div>
+                <div class="footer_content">All Rights Reserved&nbsp;</div>
+            </div>
+        </div>
+    </div>
+    <!--底部 E-->
+</div>
+<!-- home page end -->
 <script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
-
-
-
-
-
-
-
-
-  
-
-
-
-  
-  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
-
-
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
-
-
-
-  
-
-
-
-  
-
-
-
-  
-  
-  <script type="text/javascript">
-    // Popup Window;
-    var isfetched = false;
-    // Search DB path;
-    var search_path = "search.xml";
-    if (search_path.length == 0) {
-       search_path = "search.xml";
-    }
-    var path = "/" + search_path;
-    // monitor main search box;
-
-    function proceedsearch() {
-      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
-      $('.popup').toggle();
-
-    }
-    // search function;
-    var searchFunc = function(path, search_id, content_id) {
-    'use strict';
-    $.ajax({
-        url: path,
-        dataType: "xml",
-        async: true,
-        success: function( xmlResponse ) {
-            // get the contents from search data
-            isfetched = true;
-            $('.popup').detach().appendTo('.header-inner');
-            var datas = $( "entry", xmlResponse ).map(function() {
-                return {
-                    title: $( "title", this ).text(),
-                    content: $("content",this).text(),
-                    url: $( "url" , this).text()
-                };
-            }).get();
-            var $input = document.getElementById(search_id);
-            var $resultContent = document.getElementById(content_id);
-            $input.addEventListener('input', function(){
-                var matchcounts = 0;
-                var str='<ul class=\"search-result-list\">';                
-                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                $resultContent.innerHTML = "";
-                if (this.value.trim().length > 1) {
-                // perform local searching
-                datas.forEach(function(data) {
-                    var isMatch = true;
-                    var content_index = [];
-                    var data_title = data.title.trim().toLowerCase();
-                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
-                    var data_url = data.url;
-                    var index_title = -1;
-                    var index_content = -1;
-                    var first_occur = -1;
-                    // only match artiles with not empty titles and contents
-                    if(data_title != '' && data_content != '') {
-                        keywords.forEach(function(keyword, i) {
-                            index_title = data_title.indexOf(keyword);
-                            index_content = data_content.indexOf(keyword);
-                            if( index_title < 0 && index_content < 0 ){
-                                isMatch = false;
-                            } else {
-                                if (index_content < 0) {
-                                    index_content = 0;
-                                }
-                                if (i == 0) {
-                                    first_occur = index_content;
-                                }
-                            }
-                        });
-                    }
-                    // show search results
-                    if (isMatch) {
-                        matchcounts += 1;
-                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
-                        var content = data.content.trim().replace(/<[^>]+>/g,"");
-                        if (first_occur >= 0) {
-                            // cut out 100 characters
-                            var start = first_occur - 20;
-                            var end = first_occur + 80;
-                            if(start < 0){
-                                start = 0;
-                            }
-                            if(start == 0){
-                                end = 50;
-                            }
-                            if(end > content.length){
-                                end = content.length;
-                            }
-                            var match_content = content.substring(start, end);
-                            // highlight all keywords
-                            keywords.forEach(function(keyword){
-                                var regS = new RegExp(keyword, "gi");
-                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
-                            });
-                            
-                            str += "<p class=\"search-result\">" + match_content +"...</p>"
-                        }
-                        str += "</li>";
-                    }
-                })};
-                str += "</ul>";
-                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
-                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
-                $resultContent.innerHTML = str;
-            });
-            proceedsearch();
+    $(function(){
+        $('#section_wrap').fullpage({
+            anchors:['1', '2', '3','4','5','footer'],
+            'navigation': true,
+            'resize':false,
+            'verticalCentered':false
+        });
+        for(var i=0;i<5;i++){
+            $('#fp-nav ul li').eq(i).addClass('li_'+i)
         }
-    });}
 
-    // handle and trigger popup window;
-    $('.popup-trigger').mousedown(function(e) {
-      e.stopPropagation();
-      if (isfetched == false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
+        // 第二屏我的专业技能
+        $(".skill_list b").click(function() {
+            $(".skill_int").each(function() {
+                if ($(this).is(":visible")) {
+                    $(this).slideUp(200);
+                    $(this).prev().removeClass("skill_flag_scale");
+                }
+            });
+            if ($(this).siblings(".skill_int").is(":hidden")) {
+                $(this).siblings(".skill_int").slideDown(600);
+                $(this).siblings(".skill_flag").addClass("skill_flag_scale");
+            } else {
+                $(this).siblings(".skill_int").slideUp(200);
+                $(this).siblings(".skill_flag").removeClass("skill_flag_scale");
+            }
+        });
 
+        //第四屏--我的特效切换
+
+        var page=1;
+        $("#js_timeline a").click(function(){
+            $(".js_list_content").stop(true,false).animate({left:-$(".js_list").width()*$(this).index()},1000);
+            page=$(this).index()+1;
+        })
+        //上一个
+        $('#prev').click(function() {
+            if (!$(".js_list_content").is(":animated")) {
+                if (page == 1) {
+                    $(".js_list_content").animate({
+                        left: "+=50"
+                    }, 200, function() {
+                        $(this).animate({
+                            left: "-=50"
+                        }, 200);
+                    });
+                    return false;
+                }
+                $(".js_list_content").animate({
+                    left: "+=" + $(".js_list").width()
+                });
+                page--;
+            }
+        });
+
+        //下一个
+        $('#next').click(function() {
+            if (!$(".js_list_content").is(":animated")) {
+                if (page == 3) {
+                    $(".js_list_content").animate({
+                        left: "-=50"
+                    }, 200, function() {
+                        $(this).animate({
+                            left: "+=50"
+                        }, 200);
+                    });
+                    return;
+                }
+                $(".js_list_content").animate({
+                    left: "-=" + $(".js_list").width()
+                });
+                page++;
+            }
+        });
     });
-
-    $('.popup-btn-close').click(function(e){
-      $('.popup').hide();
-      $(".popoverlay").remove();
-      $('body').css('overflow', '');
-    });
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-  </script>
-
-  
-
-  
-
-  
-
+</script>
 </body>
 </html>
